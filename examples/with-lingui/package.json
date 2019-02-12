@@ -6,9 +6,13 @@
     "build": "lingui compile && next build",
     "start": "next start",
     "add-locale": "lingui add-locale",
-    "extract": "lingui extract"
+    "extract": "lingui extract",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "@lingui/react": "latest",
     "next": "latest",
     "react": "^16.7.0",
@@ -18,7 +22,13 @@
     "@lingui/cli": "latest",
     "@lingui/loader": "latest",
     "@lingui/macro": "latest",
-    "babel-plugin-macros": "^2.4.0"
+    "babel-plugin-macros": "^2.4.0",
+    "@storybook/react": "next",
+    "@storybook/addon-actions": "next",
+    "@storybook/addon-links": "next",
+    "@storybook/addons": "next",
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5"
   },
   "lingui": {
     "sourceLocale": "en",
